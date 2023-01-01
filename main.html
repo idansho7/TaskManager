@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Task Manager</h1>
+  <div id="main">
+    <div id="taskCreator">
+      <input id="taskDesc" type="text" />
+      <button id="createTask" onclick="addTask(document.getElementById('taskDesc').value)">Add
+        task</button>
+      <button class="btnClear" onclick="clearIncomplete()">Clear incomplete</button>
+      <button class="btnClear" onclick="clearComplete()">Clear complete</button>
+      <button id="clearAll" class="btnClear" onclick="clearAll()">Clear all</button>
+      <!-- Developemnt tools -- Testing javascript array
+      <button class="btnClear " onclick="displayTasksLOG()">Log Tasks</button>
+      -->
+    </div>
+
+    <div class="tables">
+      <table>
+        <col width="200px" />
+        <col width="100px" />
+        <thead>
+          <tr>
+            <th><h2>Task Description</h2></th>
+            <th><h2>Incomplete</h2></th>
+          </tr>
+        </thead>
+        <tbody id="incompleteTasks"></tbody>
+      </table>
+    </div>
+    <div class="tables">
+      <table>
+        <col width="200px" />
+        <col width="100px" />
+        <thead>
+          <tr>
+            <th><h2>Task Description</h2></th>
+            <th><h2>Complete</h2></th>
+          </tr>
+        <tbody id="completeTasks"></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--
+    <div id="tasks">
+      <div id="incomplete"></div>
+      <div id="complete"></div>
+    </div>
+-->

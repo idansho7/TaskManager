@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center !important;
+    background-image: url(icons/background.jpg);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#main {
+    margin: 0 auto;
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    border: 5px solid orange;
+    overflow: auto;
+}
+
+#taskCreator {
+    width: 15vw;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0 0 40px;
+}
+
+td {
+    font-size: 20px;
+    overflow: hidden; 
+    border: 1px solid orange;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 60%);
+}
+
+h1 {
+    color: orange;
+}
+
+table {
+    color: orange;
+    table-layout: fixed;
+    width: 27vw;
+    padding: 15px 25px;
+}
+
+#taskCreator button {
+    width: 150px;
+    height: 40px;
+    padding: 3px 8px;
+    background-color: orange;
+    color: #000;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#taskDesc {
+    height: 25px;
+    width: 150px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    background-color: transparent;
+}
+
+#incompleteTasks .icon:hover {
+    cursor: pointer;
+}
+
+.completedTR {
+    text-decoration: line-through;
+}
+
+@media (max-width: 1305px) {
+    #main {
+        flex-wrap: wrap;
+    }
+
+    #taskCreator {
+        display: block;
+        height: 8vh;
+        width: 70vw;
+    }
+    
+    #taskDesc {
+        margin: 20px auto;
+        display: block;
+        width: 20vw;
+    }
+
+    table {
+        margin: 0 auto;
+        width: 60vw;
+    }
+
+    .tables {
+        width: 60vw;
+        margin: 0 auto;
+    }
+
+    .btnClear {
+        display: none;
+    }
+
+    #clearAll {
+        display: inline-block;
+    }
+}
